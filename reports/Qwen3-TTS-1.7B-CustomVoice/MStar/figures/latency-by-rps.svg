@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="chart-title chart-desc">
+<title id="chart-title">M* p95 latency results</title>
+<desc id="chart-desc">Median p95 TTFA and end-to-end latency for promoted RPS one, two, four, six, eight, ten, and twelve.</desc>
+<style>text{font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-weight:400}.axis,.label,.legend{fill:#444441;font-size:15px}.grid{stroke:#D3D1C7;stroke-width:1}.axis-line{stroke:#888780;stroke-width:1}.ttfa{stroke:#0F6E56;fill:none}.ttfa-point{stroke:#0F6E56;fill:#0F6E56}.e2e{stroke:#534AB7;fill:none}.e2e-point{stroke:#534AB7;fill:#534AB7}@media(prefers-color-scheme:dark){.axis,.label,.legend{fill:#D3D1C7}.grid{stroke:#444441}.axis-line{stroke:#888780}.ttfa,.ttfa-point{stroke:#5DCAA5}.ttfa-point{fill:#5DCAA5}.e2e,.e2e-point{stroke:#AFA9EC}.e2e-point{fill:#AFA9EC}}</style>
+<line class="grid" x1="120" y1="476.00" x2="920" y2="476.00" />
+<text class="axis" x="108" y="481.00" text-anchor="end">100 ms</text>
+<line class="grid" x1="120" y1="403.35" x2="920" y2="403.35" />
+<text class="axis" x="108" y="408.35" text-anchor="end">200 ms</text>
+<line class="grid" x1="120" y1="307.32" x2="920" y2="307.32" />
+<text class="axis" x="108" y="312.32" text-anchor="end">500 ms</text>
+<line class="grid" x1="120" y1="234.68" x2="920" y2="234.68" />
+<text class="axis" x="108" y="239.68" text-anchor="end">1,000 ms</text>
+<line class="grid" x1="120" y1="162.03" x2="920" y2="162.03" />
+<text class="axis" x="108" y="167.03" text-anchor="end">2,000 ms</text>
+<line class="grid" x1="120" y1="66.00" x2="920" y2="66.00" />
+<text class="axis" x="108" y="71.00" text-anchor="end">5,000 ms</text>
+<line class="grid" x1="120.00" y1="66" x2="120.00" y2="476" />
+<text class="axis" x="120.00" y="503" text-anchor="middle">1</text>
+<line class="grid" x1="192.73" y1="66" x2="192.73" y2="476" />
+<text class="axis" x="192.73" y="503" text-anchor="middle">2</text>
+<line class="grid" x1="338.18" y1="66" x2="338.18" y2="476" />
+<text class="axis" x="338.18" y="503" text-anchor="middle">4</text>
+<line class="grid" x1="483.64" y1="66" x2="483.64" y2="476" />
+<text class="axis" x="483.64" y="503" text-anchor="middle">6</text>
+<line class="grid" x1="629.09" y1="66" x2="629.09" y2="476" />
+<text class="axis" x="629.09" y="503" text-anchor="middle">8</text>
+<line class="grid" x1="774.55" y1="66" x2="774.55" y2="476" />
+<text class="axis" x="774.55" y="503" text-anchor="middle">10</text>
+<line class="grid" x1="920.00" y1="66" x2="920.00" y2="476" />
+<text class="axis" x="920.00" y="503" text-anchor="middle">12</text>
+<line class="axis-line" x1="120" y1="66" x2="120" y2="476" />
+<line class="axis-line" x1="120" y1="476" x2="920" y2="476" />
+<path class="ttfa" d="M 120.00 471.85 L 192.73 458.74 L 338.18 440.74 L 483.64 414.69 L 629.09 375.08 L 774.55 322.43 L 920.00 240.32" fill="none" stroke-width="2.5" stroke-linecap="round" />
+<path class="e2e" d="M 120.00 228.20 L 192.73 203.91 L 338.18 183.62 L 483.64 180.91 L 629.09 164.96 L 774.55 145.32 L 920.00 96.07" fill="none" stroke-width="2.5" stroke-linecap="round" />
+<circle class="ttfa-point" cx="120.00" cy="471.85" r="4.5" />
+<circle class="e2e-point" cx="120.00" cy="228.20" r="4.0" />
+<circle class="ttfa-point" cx="192.73" cy="458.74" r="4.5" />
+<circle class="e2e-point" cx="192.73" cy="203.91" r="4.0" />
+<circle class="ttfa-point" cx="338.18" cy="440.74" r="4.5" />
+<circle class="e2e-point" cx="338.18" cy="183.62" r="4.0" />
+<circle class="ttfa-point" cx="483.64" cy="414.69" r="4.5" />
+<circle class="e2e-point" cx="483.64" cy="180.91" r="4.0" />
+<circle class="ttfa-point" cx="629.09" cy="375.08" r="4.5" />
+<circle class="e2e-point" cx="629.09" cy="164.96" r="4.0" />
+<circle class="ttfa-point" cx="774.55" cy="322.43" r="4.5" />
+<circle class="e2e-point" cx="774.55" cy="145.32" r="4.0" />
+<circle class="ttfa-point" cx="920.00" cy="240.32" r="4.5" />
+<circle class="e2e-point" cx="920.00" cy="96.07" r="4.0" />
+<text class="axis" x="520.00" y="540" text-anchor="middle">Target request rate (RPS)</text>
+<text class="axis" x="22" y="271.00" text-anchor="middle" transform="rotate(-90 22 271.00)">p95 latency (ms), logarithmic scale</text>
+<line class="ttfa" x1="112" y1="29" x2="144" y2="29" stroke-width="3" /><circle class="ttfa-point" cx="128" cy="29" r="4.5" /><text class="legend" x="153" y="34">p95 TTFA</text>
+<line class="e2e" x1="318" y1="29" x2="350" y2="29" stroke-width="2.5" /><circle class="e2e-point" cx="334" cy="29" r="4" /><text class="legend" x="359" y="34">p95 E2E</text>
+</svg>

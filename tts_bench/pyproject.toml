@@ -1,0 +1,48 @@
+[project]
+name = "tts-bench"
+version = "0.1.0"
+description = "An asyncio open-loop benchmark for streaming text-to-speech servers."
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.12"
+dependencies = [
+    "aiohttp>=3.12",
+    "click>=8.1",
+    "jiwer>=3.0",
+    "numpy>=2.2",
+    "pydantic>=2.10",
+    "whisper-normalizer>=0.0.10",
+]
+
+[project.scripts]
+bench = "tts_bench.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.11,<0.13"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.14",
+    "pytest>=8.3",
+    "pytest-asyncio>=0.25",
+    "ruff>=0.9",
+]
+
+[tool.pytest.ini_options]
+addopts = ["--strict-config", "--strict-markers", "-ra"]
+asyncio_mode = "strict"
+testpaths = ["tests"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["src", "tests"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["B", "E4", "E7", "E9", "F", "I", "RUF", "SIM", "UP"]
